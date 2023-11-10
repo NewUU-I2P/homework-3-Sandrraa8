@@ -1,8 +1,8 @@
 void problemSolution1(float consumed_water) {
     float cost;
     // write your code here
-float water;
-cin>>water;
+float consumed;
+cin>>consumed;
 float cost;
 if (water>0&&water<=30){
     cout<<water*0.4+13<<endl;
