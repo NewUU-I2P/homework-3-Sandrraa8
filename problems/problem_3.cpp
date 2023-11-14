@@ -5,19 +5,19 @@ std::string problemSolution3(float height, char S) {
  switch (S) {
         case 'M':
             if (height<1.7){
-                cout<<"Short"<<endl;
+                result= "Short";
             }else if (height>=1.7&&height<1.85){
-                cout<<"Normal\n";
+                result= "Normal";
             }else{
-                cout<<"Tall\n";
+                result= "Tall";
             }
         case 'F':
             if (height<1.6){
-                cout<<"Short\n";
+                result= "Short";
             }else if(height>=1.6&&height<1.75){
-                cout<<"Normal\n";
+                result= "Normal";
             }else{
-                cout<<"Tall\n";
+                result= "Tall";
             }
     }
     return 0;
