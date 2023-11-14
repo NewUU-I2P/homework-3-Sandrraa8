@@ -2,7 +2,6 @@
 
 std::string problemSolution3(float height, char S) {
     // write your code here
-std::string result;
 switch (S) {
         case 'M':
             if (height<1.7){
