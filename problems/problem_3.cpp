@@ -1,5 +1,5 @@
 #include <string>
-#include <iostream>
+
 std::string problemSolution3(float height, char S) {
     // write your code here
 if(S==M&&height<1.70&&height>0){
