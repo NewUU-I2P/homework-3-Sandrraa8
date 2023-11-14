@@ -6,7 +6,7 @@ switch (operation) {
            result=x+y;
           break;
        case '-':
-           resultx-y;
+           result=x-y;
           break;
        case '*':
            result=x*y;
