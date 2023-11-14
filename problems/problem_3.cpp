@@ -3,17 +3,17 @@
 std::string problemSolution3(float height, char S) {
     // write your code here
 if(S==M&&height<1.70&&height>0){
-    cout<<"Short"<<endl;
+    string "Short";
 }else if(height>=70&&height<1.85){
-    cout<<"Normal"<<endl;
+    string "Normal";
 }else if(height>=1.85){
-    cout<<"Tall"<<endl;
+    string "Tall";
 }else if(S==F&&height<1.60&&height>0){
-    cout<<"Short"<<endl;
+    string "Short";
 }else if(height>=1.60&&height<1.75){
-    cout<<"Normal"<<endl;
+    string "Normal";
 }else if(height>=1.75){
-    cout<<"Tall"<<endl;
+    string "Tall";
 }
 return 0;
     }
