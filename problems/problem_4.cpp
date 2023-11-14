@@ -4,22 +4,16 @@
 std::string problemSolution4(const std::string &macAddress) {
     // write your code here
 
-     std::stringstream ss(macAddress);
-    std::string hexNumber;
-    int firstOctet;
+std::string result;
+if (macAddress[0] == 'F' and macAddress[1] == 'F') {
+result = "Broadcast";
+} else if ((int)macAddress[1] % 2 == 0) {
+result = "Unicast";
+} else if ((int)macAddress[1] % 2 == 1) {
+result = "Multicast";
+}
 
-    std::getline(ss, hexNumber, ':');
-    std::stringstream(hexNumber) >> std::hex >> firstOctet;
-
-
-    std::string addressType;
-    if (firstOctet % 2 == 0) {
-        addressType = "Unicast";
-    } else if (firstOctet == 0xFF) {
-        addressType = "Broadcast";
-    } else {
-        addressType = "Multicast";
-    }
+return result;
     return 0;
     // make use of control flow statements
     // return result;
