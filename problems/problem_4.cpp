@@ -4,15 +4,15 @@
 std::string problemSolution4(const std::string &macAddress) {
     // write your code here
 
-     std::stringstream ss(macAddress);
-    std::string hexNumber;
+     stringstream ss(macAddress);
+    string hexNumber;
     int firstOctet;
 
-    std::getline(ss, hexNumber, ':');
-    std::stringstream(hexNumber) >> std::hex >> firstOctet;
+    getline(ss, hexNumber, ':');
+    stringstream(hexNumber) >> std::hex >> firstOctet;
 
 
-    std::string addressType;
+    string addressType;
     if (firstOctet % 2 == 0) {
         addressType = "Unicast";
     } else if (firstOctet == 0xFF) {
